@@ -116,6 +116,23 @@
 	+ 面向需求爬虫，针对某种特定的内容爬去信息，而且保证信息和需求尽可能相关
 
 
+# urllib2 库
+> 所谓网页抓取，就是把URL地址中指定的网络资源从网络流中读取出来，保存到本地。 
+
+- 在Python中有很多库可以用来抓取网页
+
+- urllib2 是 Python2.7 自带的模块(不需要下载，导入即可使用)
+
+- [urllib2 官方文档(https://docs.python.org/2/library/urllib2.html)
+
+- [urllib2 源码](https://hg.python.org/cpython/file/2.7/Lib/urllib2.py)
+
+- urllib2 在 Python3.x 中被改为 **urllib.request**
+
+
+- 存放路径：/usr/lib/python2.7/urllib7.py
+- 第三方模块：/usr/local/lib/python2.7/site-packages
+
 
 
 
