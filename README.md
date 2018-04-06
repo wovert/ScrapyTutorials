@@ -133,6 +133,53 @@
 - 存放路径：/usr/lib/python2.7/urllib7.py
 - 第三方模块：/usr/local/lib/python2.7/site-packages
 
+`ua_headers = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}`
+
+`# 通过 urllib2.Request() 方法构造一个请求对象
+url = "http://www.baidu.com/"
+req = urllib2.Request(url, headers=ua_headers)`
+
+`# 向指定的URL地址发送请求，并返回服务器响应的类文件对象
+res = urllib2.urlopen(req)`
+
+`# 服务器的类文件对象支持 Python 文件对象的操作方法
+# read() 方法读取文件里的全部内容，返回字符串
+html = res.read()`
+
+`# 返回响应码，200，404， 505
+print(res.getcode())`
+
+`# 返回实际数据的实际 UR，防止重定向问题L
+print(res.geturl())`
+
+`# 服务器响应的 http 包头
+print(res.info())`
+
+`# 打印响应内容python
+#print(html)`
 
 
+# 浏览器历史
+- Mosaic 世界上第一个浏览器；美国国家计算机应用中心
+- Netscape 网景：Netscape(支持框架)，慢慢开始流行...
+- Microsoft : Internet Explorer
+- 第一次浏览器大战：网景公司消失
+
+- User Agent 决定用户的浏览器，为了更好的HtML效果
+- IE 开了个好头，大家都开始给自己披着 Mozilla 的外皮
+
+
+- Mozilla 基金组织：Firefox 火狐浏览器, Gecko 内核
+
+- search: useragent大全
+
+- Mozilla: Firefox(Gecko)
+- IE: Trident
+- Opera: Presto
+- Linux: KHTML (like Gecko)
+- Apple: Webkit (like KHTML)
+- Google: Chrome (like webkit)
+- 其他浏览器都是模仿 IE Chrome
 
