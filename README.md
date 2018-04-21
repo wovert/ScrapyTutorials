@@ -183,3 +183,26 @@ print(res.info())`
 - Google: Chrome (like webkit)
 - 其他浏览器都是模仿 IE Chrome
 
+# urllib2 模块
+- 返回服务器响应的类文件对象
+	+ `res = urllib2.urlopen(url)`
+- 读取文件里的所有内容
+	+ `html = res.read()`
+
+
+- 设置代理服务
+	+ `ua_headers = {"User-Agent":"..."}`
+- 构造请求对象
+	+ `urllib2.Request(url, headers=us_headers)`
+- 向URL地址发送请求，并返回服务器响应的类文件对象
+	+ `res = urllib2.urlopen(req)`
+
+- 响应码：`res.getcode()`
+- 响应 http 报头： `res.info()`
+- 返回实际的URL: `res.geturl()`
+
+- 添加/修改 HTTP 报头
+`urllib2.add_header('User-Agent', user_agent);`
+
+- 获取 http 报头信息: 首字母必须大写，其他必须小写
+`req.get_header('User-agent')`
