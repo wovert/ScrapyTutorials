@@ -189,7 +189,6 @@ print(res.info())`
 - 读取文件里的所有内容
 	+ `html = res.read()`
 
-
 - 设置代理服务
 	+ `ua_headers = {"User-Agent":"..."}`
 - 构造请求对象
@@ -206,3 +205,17 @@ print(res.info())`
 
 - 获取 http 报头信息: 首字母必须大写，其他必须小写
 `req.get_header('User-agent')`
+
+- encode 编码(接受的参数是字典)
+```
+import urllib
+m = urllib2.urlencode({'wd':'微名'})
+urllib.unquote(m).decode('utf-8')
+```
+
+
+
+
+
+
+
