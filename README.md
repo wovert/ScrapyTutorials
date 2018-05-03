@@ -213,6 +213,13 @@ m = urllib2.urlencode({'wd':'微名'})
 urllib.unquote(m).decode('utf-8')
 ```
 
+# GET 和 POSt 请求的区别
+- GET URL 带参数
+	+ 参数在QueryString
+- POST URL 不带参数
+
+## POST 请求实例
+- [有道翻译](http://fanyi.youdao.com)
 
 
 
