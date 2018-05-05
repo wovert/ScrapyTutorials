@@ -17,7 +17,7 @@ headers = {
 
 req = urllib2.Request(url, headers = headers)
 data = urllib2.urlopen(req).read()
-d = data.decode('utf-8');
+d = data.decode('utf-8')
 print(d)
 
 
