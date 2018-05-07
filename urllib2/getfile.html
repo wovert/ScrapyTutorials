@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>供求世界-会员中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="keywords" content="供求世界,延吉供求信息,延吉百姓信息网,延吉房产,延吉招聘,延吉出兑,转让,征婚交友,二手交易" />
+    <meta name="description" content="在延吉供求世界，您可以免费查找延吉本地延吉本地最新最全的招聘信息、房产信息、二手物品交易、二手车买卖、房屋租售、宠物、招聘、兼职、求职、交友活动、生活服务信息。还能免费发布这些信息">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/main.css?v1.4.1"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/common.css"/>
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
+    <script src="/static/js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/layer/layer.js"></script>
+    <script src="/static/js/common.js"></script>
+    </head>
+<body>
+<header class="top list-top">
+    <div class="container-fluid toolbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 city">
+                <a class="this-city" href="http://yanji.gqsj.cc">延吉市</a><a href="/city">[切换城市]</a>
+                周边城市：
+                <a href="http://tumen.gqsj.cc">图们市</a><a href="http://dunhua.gqsj.cc">敦化市</a><a href="http://hunchun.gqsj.cc">珲春市</a><a href="http://longjing.gqsj.cc">龙井市</a><a href="http://helong.gqsj.cc">和龙市</a><a href="http://wangqing.gqsj.cc">汪清县</a>                <a href="javascript:" class="index-qr">
+                    <img src="/static/img/tools_qr.png">
+                    供求世界APP
+                    <div>
+                        <img src="/static/img/appqr.png" class="app">
+                        <p>
+                            扫一扫下载供求世界APP
+                        </p>
+                    </div>
+                </a>
+                                    <a href="/" class="back-index">
+                        <img src="/static/img/tools_index.png">
+                        返回首页
+                    </a>
+                    
+            </div>
+            <div class="col-xs-4  txt-r userToolbar">
+                                        <a href="/user" class="nick">CG-全栈运维开发</a>
+<!--                            <i>|</i>-->
+                            <span class="selectToolbar">
+                            <a href="/user">个人中心 </a>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <ul>
+                                <li><a href="/user/info">我发布的信息</a></li>
+                                <li><a href="/user/service">百事帮信息</a></li>
+                                                                <li class="bdt"><a href="/user/resume">我的简历</a></li>
+                                <li><a href="/user/resume-receive">我收到的简历</a></li>
+    <!--                            <li><a href="/user/level">购买/续费会员</a></li>-->
+                                <li class="bdt"><a href="/user/money">账户明细</a></li>
+                                <li><a href="/user/pwd">修改密码</a></li>
+                                <li class="bdt"><a href="/logout">退出</a></li>
+                            </ul>
+                        </span>
+                        <!--                <i>|</i>-->
+                <a href="/vip">VIP推广</a>
+                <!--                        <i>|</i>-->
+                        <a href="/biz" target="_blank">进入商户平台</a>
+                                    <a href="/help">帮助</a>
+            </div>
+        </div>
+    </div>
+</div>    <div class="container-fluid head-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="logo">
+                        <a href="/"><img src="/static/img/index_logo.png"></a>
+                        <div class="glyphicon  glyphicon-chevron-right"> <a href="/user/info">我的供求</a></div> <div class="glyphicon  glyphicon-chevron-right"> <a href="/user/info">我发布的信息</a></div>                     </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <a class="send" href="/fabu" target="_blank">
+                        发布信息
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><link type="text/css" rel="stylesheet" href="/static/css/user.css"/>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/template.js"></script>
+<style>
+    .modal-open{
+        overflow: auto;
+    }
+    main .right .tap{
+        margin-bottom:20px;
+        margin-left:10px;
+    }
+    main .right .tap a{
+        display: inline-block;
+        padding:10px 20px;
+        font-size:14px;
+        margin-right:20px;
+    }
+    main .right .tap a:hover{
+        text-decoration: none;
+    }
+    main .right .tap a.on{
+        color: #5DAEFC;
+        border-bottom:2px solid #5DAEFC;
+    }
+    main .right .send-list > div{
+        padding:10px 10px;
+        width:100%;
+        border-bottom:1px solid #dddddd;
+
+    }
+    main .right .send-list > div:last-of-type{
+        border-bottom:none;
+    }
+    main .right .send-list div table{
+        width:100%;
+    }
+    main .right .send-list div table td.img{
+        width:120px;
+    }
+    main .right .send-list div table td.img a{
+        display: inline-block;
+        width:120px;
+        height:85px;
+        overflow: hidden;
+    }
+    main .right .send-list div table td.img a img{
+        width:120px;
+    }
+    main .right .send-list div table td:last-of-type{
+        position: relative;
+        width:770px;
+        padding-left:20px;
+        vertical-align: top;
+    }
+    main .right .send-list div table td .title {
+        vertical-align: top;
+        display: inline-block;
+    }
+    main .right .send-list div table td .title a{
+        font-size:20px;
+        font-weight: bold;
+        color: #000;
+        text-overflow: ellipsis;overflow: hidden;white-space: nowrap;
+        max-width:500px;
+        display: inline-block;
+        float: left;
+    }
+    main .right .send-list div table td .time{
+        position: absolute;
+        top:5px;
+        right:0;
+    }
+    main .right .send-list div table td p{
+        margin-top:10px;
+        color: #999;
+        font-size:14px;
+    }
+    main .right .send-list div table td .money{
+        width:50%;
+        float: left;
+        font-size:14px;
+    }
+    main .right .send-list div table td .money span{
+        color: #5DAEFC;
+    }
+    main .right .send-list div table td .tool{
+        width:60%;
+        float: right;
+        text-align: right;
+    }
+    main .right .send-list div table td .tool i{
+        font-style:normal;
+        padding:0 10px;
+    }
+    main .right .send-list div table td .tool span{
+        cursor: pointer;
+    }
+    main .right .send-list div table td .tool span:hover{
+        color: #5DAEFC;
+    }
+    .btn-modal-gray-click {
+        background-color: #B0D8FF;
+        border: 1px solid #5DAEFC;
+    }
+    .timer div{
+        padding-left:0;
+    }
+    .img a{
+        position: relative;
+        background-color: #F3F3F3;
+    }
+    .img a span{
+        color: #ffffff;
+        padding: 3px 5px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .img a.img0{
+        background-color: #D5EBFF;
+    }
+    .img a.img1{
+        background-color: #B0D5F7;
+    }
+    .img a.img2{
+        background-color: #FFEAD0;
+    }
+    .img a.img3{
+        background-color: #FFE1C1;
+    }
+    .img a.img4{
+        background-color: #C6DDFF;
+    }
+    .time .red{
+        color: red;
+        background-color: #ffffff;
+        padding:5px;
+    }
+    .layer-refesh .layui-layer-btn .layui-layer-btn0{
+        border-color: #44B549;
+        background-color: #44B549;
+        color: #fff;
+    }
+    .layer-refesh .layui-layer-btn .layui-layer-btn1 {
+        border-color: #4898d5;
+        background-color: #2e8ded;
+        color: #fff;
+/* packageList */
+    .packageList ul li:nth-child(2n){
+        background-color: #f3f3f3;
+    }
+    .packageList ul{
+        padding:0 10px;
+    }
+    .packageList ul li input{
+        vertical-align: -2px;
+        margin-right:5px;
+    }
+    .packageList ul li label{
+        font-weight:inherit;
+        margin-bottom:0;
+        display: block;
+        width:100%;
+        cursor: pointer;
+    }
+    .packageList ul li{
+        padding:10px 15px;
+        font-size:14px;
+    }
+    .btn-primary:hover{
+        background-color: #5BA4D5;
+        border-color: #5BA4D5;
+    }
+    .btn-primary{
+        background-color: #5daefc;
+        border-color: #5daefc;
+    }
+</style>
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 top">
+            <script src="/static/js/ajax-upload.js"></script>
+<div class="head">
+    <a href="javascript:" class="headFile">
+        <img src="http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIBlxYhXibtULJmtl9vSnP5diaXF4K9MCge527DnU5bnAvlia3tkkguatrDQWKc28sdO4yGfUscXe4GQ/0">
+        <input type="file" style="display: none;"/>
+        <span class="glyphicon glyphicon-pencil" title="请上传 160*160 jpg/png 图片"></span>
+    </a>
+    <div>
+        <div class="title" id="nickname" value="CG-全栈运维开发" title="点击修改">
+            CG-全栈运维开发        </div>
+        <p>
+            <span>
+                156****1283            </span>
+            <a href="/user/mobile">修改</a>
+            <i>|</i>
+            #gq15123179458967        </p>
+    </div>
+</div>
+<div class="profile">
+   余额 0.00元 <a href="/user/pay">充值</a>&nbsp;&nbsp;&nbsp;未读简历（<a href="/user/resume-receive?status=0">0</a>）
+</div>
+<script>
+    var headHost = "http://img.static.gqsj.cc";
+    var thumb = "@85w_85h_1e_1c_2o_85-1ci_1o.png";
+    //上传图片
+    $('.headFile').fileUpload({
+        uploadUrl:"/file/head",
+        maxSize:1024*1024*5,
+        start:function(){
+            $(".headFile img").addClass('on');
+            return true;
+        },
+        callback:function(val){
+            var img = $(".headFile img");
+            if (val)
+            {
+                img.attr('src',headHost+"/"+val+thumb).load(function(){
+                    img.removeClass('on');
+                });
+                $.post('/account/up-avatar',{path:val});
+            }
+        }
+    });
+    var tipsConfig = {
+        tips: [1, '#5DAEFC']
+    };
+    $("#nickname").click(function() {
+        if ($(this).find('input').length>0)return;
+        var val = $(this).attr('value');
+        var txt = $('<input type="text" value="'+val+'" maxlength="20"/>');
+        $(this).html('').append(txt);
+        txt.focus();
+    }).on('blur','input',function(){
+        var val = $(this).val();
+
+        if (val=="")
+        {
+            layer.tips('请输入昵称', '#nickname input', tipsConfig);
+            $(this).focus();
+            return;
+        }
+        if (len(val)<4 || len(val)>20)
+        {
+            layer.tips('昵称长度应为6~20位', '#nickname input', tipsConfig);
+            $(this).focus();
+            return;
+        }
+        val = stripscript(val);
+        var that = this;
+        if ($(that).parent().attr('value') == val)
+        {
+            $(that).parent().html(val);
+            return;
+        }
+        $.post("/account/nickname",{nickname:val},function(){
+            $(that).parent().attr('value',val).html(val);
+            $(".userToolbar .nick").html(val);
+        });
+    }).on('keyup','input',function(e){
+        if (e.keyCode == 13)
+        {
+            $(this).blur();
+        }
+    });
+
+    function stripscript(s)
+    {
+        var pattern = new RegExp("[`~!@#\"$^&*()=|{}':;',\\[\\].<>/?~！@#*|{}]");
+        var rs = "";
+        for (var i = 0; i < s.length; i++) {
+            rs = rs+s.substr(i, 1).replace(pattern, '');
+        }
+        return rs;
+
+    }
+</script>        </div>
+    </div>
+        <div class="row main">
+        <div class="col-xs-2 left">
+            <div class="title">
+    我的发布
+</div>
+<a href="/user/info" class="on">我发布的信息</a>
+<a href="/user/service" class="">我的百事帮信息</a>
+<div class="title">
+    我的求职
+</div>
+<a href="/user/resume" class="">我的简历</a>
+<a href="/user/resume-send" class="">简历投递记录</a>
+<div class="title">
+    我的招聘
+</div>
+<a href="/user/resume-receive" class="">收到的简历</a>
+<a href="/user/resumes-buy" class="">购买的简历</a>
+<div class="title" style="cursor: pointer" onclick="location.href='ticket'">
+    优惠券 / 团购券
+</div>
+<div class="title">
+    用户中心
+</div>
+<a href="/user/money" class="">账户明细</a>
+<a href="/user/mobile" class="">修改手机</a>
+<a href="/user/pwd" class="">修改密码</a>
+<a href="/account/verify-center" class="">认证中心</a>
+<a href="/user/invite" class="" >我的邀请</a>
+
+<!--<a href="/user/auth" class="--><?//=$actionId=='auth'?'on':''?><!--">我的权限</a>-->
+<!--<a href="/user/level" class="--><?//=$actionId=='level'?'on':''?><!--">购买/续费会员</a>-->
+<div class="title">
+    充值中心
+</div>
+<a href="/user/pay" class="">余额充值</a>
+
+        </div>
+        <div class="col-xs-10 right">
+            <div class="content">
+                <div class="list-top">
+                    我发布的信息
+                </div>
+                <!--                <div class="tap">-->
+                <!--                    <a href="#" class="on">正常显示</a>-->
+                <!--                    <a href="">已删除</a>-->
+                <!--                    <a href="#">已搞定</a>-->
+                <!--                </div>-->
+                <div class="send-list">
+                                                <div>
+                                <table>
+                                    <tr>
+                                        <td class="img">
+                                            <a href="/info/590667" class="img3" target="_blank">
+                                                <img src="http://img.static.gqsj.cc/info/2018-03-22/15216483983423.png@120w_85h_1e_1c_99Q_1o">                                                <span>2图</span>                                            </a>
+                                        </td>
+                                        <td>
+                                            <div class="title">
+                                                <a href="/info/590667" target="_blank">免费线上学习大学四年级计算机全课程</a>
+                                                                                            </div>
+                                            <div class="time">
+                                                                                            446次浏览 / 05月04 09:24                                            - 06月03 09:24                                            </div>
+                                            <p>
+                                                延边 - 延吉市                                            </p>
+                                            <div class="money">
+                                                <a href="/l/48" target="_break">教育培训</a> / <a href="/l/48/64" target="_break">电脑培训</a>                                            </div>
+                                            <div class="tool" z="1" id="590667" catId="64" parentId="48"
+                                                 data-top="0" data-direct="0" data-show="0">
+                                            <span class="reload">免费刷新</span><i>|</i><span class="placed">置顶</span><i>|</i><span class="ztc">直通车</span><i>|</i><span class="modify">修改信息</span><i>|</i><span class="offShelf">下架</span><i>|</i><span class="del">删除信息</span>                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                                        </div>
+                <div class="pageCount">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--置顶窗口-->
+<div id="topModal" class="modal fade in" aria-hidden="false" tabindex="-1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">标题信息:</label>
+                        <p class="form-control-static subject"></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">选择时长:</label>
+                        <div class="timer">
+                            <div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="10" data-method="1">1天 10元</button>&nbsp;
+                                </div><div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="80" data-method="10">10天 80元</button>&nbsp;
+                                </div><div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="180" data-method="30">30天 180元</button>&nbsp;
+                                </div>                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">应付价格:</label>
+                        <p class="form-control-static"><span class="font_w font_18 color_d73030 payAmount">0</span> 元</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-top" id="zfb">支付宝支付</button>
+                <button type="button" data-dismiss="modal" class="btn btn-success btn-balance" id="yue">余额支付(0.00)</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--直通车窗口-->
+<div id="busModal" class="modal fade in" aria-hidden="false" tabindex="-1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">标题信息:</label>
+                        <p class="form-control-static subject"></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">选择时长:</label>
+                        <div class="timer">
+                            <div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="10" data-method="1">1天 10元</button>
+                                </div><div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="80" data-method="10">10天 80元</button>
+                                </div><div class="col-sm-2">
+                                    <button type="button" class="btn btn-modal-gray type" data-price="180" data-method="30">30天 180元</button>
+                                </div>                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">应付价格:</label>
+                        <p class="form-control-static"><span class="font_w font_18 color_d73030 payAmount">0</span> 元</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-top" id="zfb">支付宝支付</button>
+                <button type="button" data-dismiss="modal" class="btn btn-success btn-balance" id="yue">余额支付(0.00)</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--选择套餐-->
+<div id="publishPackage" class="modal fade" aria-hidden="false" tabindex="-1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">选择套餐</h4>
+            </div>
+            <div class="modal-body packageList">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="package-sub">确定</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var buttonTopType = $("#topModal .timer");
+    var buttonBusType = $("#busModal .timer");
+    var paymentAmount = 0;
+    var infoId = 0;
+    var sub = true;
+    var type = '';
+    var taocanId = 0;
+    var taocanPrice = 0;
+    var parentCategoryId = 0;
+    var categoryId = 0;
+    //置顶时长选择事件
+    buttonTopType.on('click','.btn',function(){
+        durationSelected($(this));
+    });
+    buttonBusType.on('click','.btn',function(){
+        durationSelected($(this));
+    });
+    function durationSelected(dom) {
+        var t = dom;
+        t.addClass('btn-modal-gray-click').parent().siblings().find('.btn').removeClass('btn-modal-gray-click');
+        //变更购买价格显示 并 参与运算
+        paymentAmount = t.data('price');
+        $(".payAmount").text(paymentAmount);
+    }
+    $("#zfb,#yue").click(function() {
+        var obj = this.id;
+        var ck;
+        if (type=='placedTop') {
+            //置顶
+            ck = buttonTopType.find('.btn-modal-gray-click');
+        } else {
+            //直通车
+            ck = buttonBusType.find('.btn-modal-gray-click');
+        }
+        var method = ck.data('method');
+        if (ck.length<1)
+        {
+            alert('请选择一个时长');
+            return false;
+        }
+
+        var msg = "";
+
+        msg += "置顶时长：" + method + "天" + "<br>";
+        msg += "支付金额：" + paymentAmount + " 元";
+        //请求数据处理
+        layer.confirm(msg,{
+            title : "请核对信息并支付",
+            btn:[
+                '支付',
+                '取消'
+            ]
+        },function(){
+            if (obj == 'zfb')
+            {
+                var url = "/ali/pay";
+                var form = $("<form method='post' target='_blank' action='"+url+"'>");
+                form.append($("<input type='hidden' name='day' value='"+method+"'>"));
+                form.append($("<input type='hidden' name='infoId' value='"+infoId+"'>"));
+                form.append($("<input type='hidden' name='type' value='"+type+"'>"));
+                form.appendTo('body');
+                form.submit();
+                layer.confirm('支付已完成',{
+                    title : "",
+                    btn:[
+                        '确定',
+                        '取消'
+                    ]
+                }, function () {
+                    location.reload();
+                },function(){
+                    location.reload();
+                });
+            }else{
+                if (parseFloat(paymentAmount) > "0.00")
+                {
+                    layer.confirm('金额不足，请先充值',{
+                        title : "",
+                        btn:['确定','取消']
+                    }, function () {
+                        window.open('/user/pay');
+                    });
+                    return;
+                }
+                var subUrl = 'placed';
+                if (type == 'bus')
+                {
+                    subUrl = 'ztc';
+                }
+                if (!sub)
+                {
+                    return;
+                }
+                sub = false;
+
+                $.post('/user/info/'+subUrl,{id:infoId,method:method},function(json){
+                    sub = true;
+                    alert(json.msg,function(){
+                        if (json.error<1)
+                        {
+                            location.reload();
+                        }
+                    });
+                },'json');
+            }
+        });
+    });
+    //置顶，直通车modal
+    $(".placed,.ztc").click(function() {
+        var obj = $(this).attr('class');
+        infoId = $(this).parent().attr('id');
+        if ($(this).parent().attr('z') != "1")
+        {
+            alert('信息还未审核通过，请稍候再试');
+            return;
+        }
+        var title = '设置置顶信息';
+        type = 'placedTop';
+        if (obj == 'ztc')
+        {
+            title = '设置直通车信息';
+            type = 'bus';
+        }
+        $(".modal-title").html(title);
+        $(".subject").html($(this).parents('td').find('.title a').html());
+        if (type == 'placedTop') {
+            $("#topModal").modal('show');
+            $('#topModal .btn:eq(0)').click();
+        } else {
+            $("#busModal").modal('show');
+            $('#busModal .btn:eq(0)').click();
+        }
+        $("body").css('paddingRight',0);
+    });
+    //编辑
+    $(".modify").click(function () {
+        var id = $(this).parent().attr('id');
+        window.open("/send-modify/info?id=" + id);
+    });
+    //删除
+    $(".del").click(function() {
+        var that = this;
+        var id = $(this).parent().attr('id');
+        //提示信息,包含置顶，直通车
+        var msg = msgBeforeAction($(this));
+        msg += '确定删除此信息吗？';
+        layer.confirm(msg,{
+            title : "",
+            btn:['确定','取消']
+        },function(){
+            $.get("/user/info/del/"+id,function(json){
+                alert(json.msg,function(){},1000);
+                if (!json.error)
+                {
+                    var _this = $(that).parents('table').parent();
+                    _this.fadeOut(500);
+                    setTimeout(function () {
+                        _this.remove();
+                        if ($(".send-list div").length<1)
+                        {
+                            $(".send-list").html('<div class="zanwu"><p><span class="glyphicon glyphicon-exclamation-sign gantan"></span>您还没有发布信息</p><br/><p>1.您可以<a href="/fabu">点这里免费发布</a></p><p>2.去<a href="/">首页</a>随便逛逛，看看大家都在发些什么信息</p></div>');
+                        }
+                    },500);
+                }
+            },'json');
+        });
+    });
+    //刷新
+    $(".reload").click(function() {
+        var id = $(this).parent().attr('id');
+        if ($(this).parent().attr('z') != "1")
+        {
+            alert('信息还未审核通过，请稍候再试');
+            return;
+        }
+        layer.confirm('确定刷新，此信息的发布时间吗？',{
+            title : "",
+            btn:['确定','取消']
+        },function(){
+            if ("1")
+            {
+                $.get("/user/info/refresh/"+id,function(json){
+                    alert(json.msg,function(){
+                        sub = true;
+                        if (!json.error)
+                        {
+                            location.reload();
+                        }
+                    },1000);
+                },'json');
+            }else{
+                layer.alert('今天免费刷新条数以用完，支付0.2元继续刷新', {
+                    title: '提示'
+                    ,skin:'layer-refesh'
+                    ,btn: ['微信','支付宝支付','余额支付（0.00）']
+                    ,btn1: function () {
+                        layer.closeAll();
+
+                        $.post('/wxpay/set-pay',{type:'refresh',infoId:id},function(json){
+                            if (json.error > 0)
+                            {
+                                alert(json.msg);
+                                return;
+                            }
+
+                            layer.open({
+                                type: 1,
+                                title: false,
+                                area: ['400px','586px'],
+                                content: '' +
+                                '<div style="text-align: center;padding:40px 20px;">' +
+                                '<img src="/static/img/WePayLogo.png" style="height:90px">' +
+                                '<img src="/auth/wx-qrcode?code='+encodeURIComponent(json.data)+'" style="margin: 35px 0;width: 260px;height: 260px;">' +
+                                '<img src="/static/img/wxpaybtn.png"></div>',
+                                shadeClose: true
+                            });
+                        },'json');
+//                        var form = $("<form method='post' target='_blank' action='/ali/pay'>");
+//                        form.append($("<input type='hidden' name='infoId' value='"+id+"'>"));
+//                        form.append($("<input type='hidden' name='type' value='refresh'>"));
+//                        form.appendTo('body');
+//                        form.submit();
+//                        layer.confirm('支付已完成',{
+//                            title : "",
+//                            btn:[
+//                                '确定',
+//                                '取消'
+//                            ]
+//                        }, function () {
+//                            location.reload();
+//                        },function(){
+//                            location.reload();
+//                        });
+                    }
+                    ,btn2: function () {
+                        var form = $("<form method='post' target='_blank' action='/ali/pay'>");
+                        form.append($("<input type='hidden' name='infoId' value='"+id+"'>"));
+                        form.append($("<input type='hidden' name='type' value='refresh'>"));
+                        form.appendTo('body');
+                        form.submit();
+                        layer.confirm('支付已完成',{
+                            title : "",
+                            btn:[
+                                '确定',
+                                '取消'
+                            ]
+                        }, function () {
+                            location.reload();
+                        },function(){
+                            location.reload();
+                        });
+                    },btn3: function () {
+                        $.post('/account/refresh-pay',{id:id},function(payJson){
+                            alert(payJson.msg,function(){
+                                if (payJson.error == 0 )
+                                {
+                                    location.reload();
+                                }
+                            },3000);
+                        },'json');
+                        return false;
+                    }
+                });
+            }
+        });
+    });
+    //下架
+    $(".offShelf").click(function () {
+        var id = $(this).parent().attr('id');
+        //提示信息,包含置顶，直通车
+        var msg = msgBeforeAction($(this));
+        msg += '确定下架此信息吗？';
+        layer.confirm(msg,{
+            title : "",
+            btn:['确定','取消']
+        },function(){
+            $.get("/user/info/shelf/"+id,function(json){
+                alert(json.msg,function(){
+                    if (!json.error)
+                    {
+                        location.reload();
+                    }
+                },1000);
+            },'json');
+        });
+    });
+    //上架
+    $(".onShelf").click(function () {
+        var id = $(this).parent().attr('id');
+        layer.confirm('确定要上架此信息呢？',{
+            title : "",
+            btn:['确定','取消']
+        },function(){
+            $.get("/user/info/shelf/"+id,function(json){
+                alert(json.msg,function(){
+                    if (!json.error)
+                    {
+                        location.reload();
+                    }
+                },1000);
+            },'json');
+        });
+    });
+    //重新发布
+    $(".republish").click(function () {
+        infoId = $(this).parent().attr('id');
+        categoryId = $(this).parent().attr('catId');
+        parentCategoryId = $(this).parent().attr('parentId');
+        layer.confirm("确定要重新发布此信息吗？",{
+            title : "",
+            btn:['确定','取消']
+        },function () {
+            layer.closeAll();
+            $.post('/account/republish',{id:infoId},function (json) {
+                if(json.error == 200){
+                    alert(json.msg,function(){
+                            location.reload();
+                    },1000);
+                }else if(json.error == 202){
+                    //付费发布
+                    $.get('/user/info/package/'+categoryId,function (json) {
+                        $(".packageList").html(template('list', {list:json.result}));
+                    },'json');
+                    $("#publishPackage").modal("show");
+                }else{
+                    alert(json.msg);
+                }
+            },'json');
+        });
+    });
+    //套餐
+    $("#package-sub").click(function() {
+        var option = $(".packageList input[name='taocan']:checked");
+        taocanId = option.val();
+        taocanPrice = option.attr('price');
+        if (!taocanId)
+        {
+            alert('请选择套餐');
+            return;
+        }
+        $("#publishPackage").modal('hide');
+        pay();
+    });
+    //支付方式
+    function pay(){
+        layer.alert('<div style="text-align:center;font-size:14px;">支付'+taocanPrice+'元继续发布</div><div style="color:#ff714d;text-align:center;font-size:12px;">VIP畅享发布、刷新 0433-6099938</div>', {
+            title: '提示'
+            ,btn: ['支付宝支付','余额支付（0.00）','取消']
+            ,btn1: function () {
+                $.post('/account/publish/',{id:infoId,pid:taocanId},function (json) {
+                    if(json.error == 200){
+                        var form = $("<form method='post' target='_blank' action='/ali/pay'>");
+                        form.append($("<input type='hidden' name='infoId' value='"+infoId+"'>"));
+                        form.append($("<input type='hidden' name='id' value='"+categoryId+"'>"));
+                        form.append($("<input type='hidden' name='parentId' value='"+parentCategoryId+"'>"));
+                        form.append($("<input type='hidden' name='pid' value='"+taocanId+"'>"));
+                        form.append($("<input type='hidden' name='type' value='report'>"));
+                        form.appendTo('body');
+                        form.submit();
+                        layer.confirm('支付已完成',{
+                            title : "",
+                            btn:[
+                                '确定',
+                                '取消'
+                            ]
+                        }, function () {
+                            location.reload();
+                        },function(){
+                            location.reload();
+                        });
+                    }else{
+                        alert(json.msg);
+                    }
+                },'json');
+            },btn2: function () {
+                $.post('/account/send-pay',{id:infoId,pid:taocanId,type:"republish"},function(payJson){
+                    alert(payJson.msg,function(){
+                        if (payJson.error == 0 )
+                        {
+                            location.reload();
+                        }else if(payJson.error == 2){
+                            pay();
+                        }
+                    },2000);
+                },'json');
+                return false;
+            }
+        });
+    }
+    //信息操作中有关置顶直通车的提示语
+    function msgBeforeAction(obj) {
+        var msg = '信息';
+        if(checkInfoMode(obj,'top') == false){
+            msg += '置顶';
+        }
+        if(checkInfoMode(obj,'direct') == false){
+            if(msg == '信息'){
+                msg += '直通车';
+            }else{
+                msg += '( 直通车 )';
+            }
+        }
+        if(msg == '信息'){
+            msg = '';
+        }else{
+            msg += '中<br>';
+        }
+        return msg;
+    }
+    //检测不符合条件信息,[置顶,直通车]
+    function checkInfoMode(obj,type) {
+        if(!type){
+            return true;
+        }
+        var result = true;
+        if (obj.parent().data(type) == 1) {
+            result = false;
+        }
+        return result;
+    }
+</script>
+<script id="list" type="text/html">
+    <ul>
+    {{each list as value}}
+    <li>
+        <label><input type="radio" value="{{value.pid}}" name="taocan" price="{{value.price}}"/>{{value.label}}</label>
+    </li>
+    {{/each}}
+    </ul>
+</script><footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="col-xs-6">
+                    <strong>
+                        关于供求世界
+                    </strong>
+                    <a href="/company/introduce">公司介绍</a>
+                    <a href="/company/architecture">组织机构</a>
+                    <a href="/company/honor">公司荣誉</a>
+                    <a href="/company/things">公司大事记</a>
+                    <a href="/company/management">高层管理</a>
+                    <a href="/company/culture">企业文化</a>
+<!--                    <a href="#">新闻中心</a>-->
+                </div>
+                <div class="col-xs-6">
+                    <strong>
+                        服务/扩展
+                    </strong>
+                    <a href="/book">在线看报</a>
+                    <a href="/reg">会员注册</a>
+                    <a href="/forgot">密码找回</a>
+                    <a href="javascript:;" id="alipay1200">支付宝支付</a>
+                    <a href="/help">帮助中心</a>
+
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="col-xs-6">
+                    <strong>
+                        公众号
+                    </strong>
+                    <img class="qr" src="http://img.static.gqsj.cc/Uploads/other/2018-04-28/1524895591_66223.png@155w_155h_1e_1c_99Q_1o">
+                </div>
+                <div class="col-xs-6">
+                    <strong>
+                        APP下载
+                    </strong>
+                    <img class="qr" src="/static/img/appqr.png">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <strong>
+                    城市站延吉市供求世界
+                </strong>
+                <p>
+                    客服电话：0433-2020889                </p>
+                <p>
+                    广告受理：0433-2020889                </p>
+                <p>
+                    电话：0433-6099938                </p>
+                <p>
+                    QQ：578856191                </p>
+                <p>
+                    地址：吉林省延吉市河南街24号市政府对面2楼                </p>
+            </div>
+            <div class="col-xs-12 icp">
+                吉ICP备11001634号-2增值电信业务经营许可证 吉 B-2-4-20110040 吉公网安备 22240102000009号
+                <a href="http://new.cnzz.com/v1/login.php?siteid=3332684"><img src="/cnzz.gif"/></a>
+            <div style="display: none" id="cnzz">
+                <script type="text/javascript">
+                    $(function () {
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        var cz = document.createElement("script");
+                        cz.src = cnzz_protocol+"s11.cnzz.com/z_stat.php?id=3332684&web_id=3332684";
+                        document.getElementById('cnzz').appendChild(cz);
+
+                        var cz2 = document.createElement("script");
+                        cz2.src = cnzz_protocol+"s11.cnzz.com/z_stat.php?id=1260812059&web_id=1260812059";
+                        document.getElementById('cnzz').appendChild(cz2);
+                        var _hmt = _hmt || [];
+                        (function() {
+                            var hm = document.createElement("script");
+                            hm.src = "https://hm.baidu.com/hm.js?ea1395decb34bdac57ff724c45a96da3";
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(hm, s);
+                        })();
+                    });
+                </script>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<img src="/static/img/alipay1200.jpg" id="alipay1200Img">
+<style>
+    #alipay1200Img{
+        display: none;width: 550px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;;
+    }
+</style>
+<script>
+    $("#alipay1200").click(function() {
+        layer.open({
+            type: 1,
+            title: false,
+            area: '550px',
+            content: $('#alipay1200Img'),
+            shadeClose: true
+        });
+    });
+</script></body>
+</html>
