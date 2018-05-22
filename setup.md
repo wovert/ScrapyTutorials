@@ -45,9 +45,9 @@ root 账户
 
 `# python3`
 
-# MongoDB 环境安装
+## MongoDB 环境安装
 
-## Windows 下安装 MongoDB
+### Windows 下安装 MongoDB
 
 MongoDB 官网下载 Windows 版 MongoDB
 
@@ -89,7 +89,7 @@ MongoDB\Server\3.4\bin> mongod --bind_ip 0.0.0.0 --logpath MongoDB\Server\3.4\da
 
 [Robo 3T](https://robomongo.org/) 可视化查看 MongoDB 数据库工具
 
-## Linux 下安装 MongoDB
+### Linux 下安装 MongoDB
 
 ``` shell
 # apt-get install mongodb
@@ -102,20 +102,23 @@ MongoDB\Server\3.4\bin> mongod --bind_ip 0.0.0.0 --logpath MongoDB\Server\3.4\da
 
 ```
 
-## MacOS 下安装 MongoDB
+### MacOS 下安装 MongoDB
 
 ``` shell
 # brew install mongodb
 ```
 
-# Redis 安装
+## Redis 安装
 
-## Windows 下安装 Redis
-[Redis 官网下载]https://redis.io/
+### Windows 下安装 Redis
+
+[Redis 官网下载](https://github.com/MicrosoftArchive/redis/releases)
+
+双击redis-server.exe启动redis服务器，双击redis-cli.exe打开redis客户端（用来执行命令，访问服务器的）
 
 可视化界面 [RedisDesktopManager](https://github.com/uglide/RedisDesktopManager)
 
-## Linux 下安装 Redis
+### Linux 下安装 Redis
 
 ``` shell
 # apt-get install redis
@@ -141,16 +144,16 @@ requirepass mypassword 连接密码
 
 ```
 
-## MacOS 下安装 Redis
+### MacOS 下安装 Redis
 
 ``` shell
 # brew install redis
 
 ```
 
-# MySQL 安装
+## MySQL 安装
 
-## Windows 下安装 MySQL
+### Windows 下安装 MySQL
 
 官网下载 MySQL 安装包
 
@@ -158,7 +161,7 @@ requirepass mypassword 连接密码
 
 MySQL 可视化界面 MySQL-Front
 
-## Linux 安装 MySQL
+### Linux 安装 MySQL
 
 ``` shell
 # apt-get install mysql-service mysql-client
@@ -171,6 +174,6 @@ bind-address= 可以注释调可以远程访问
 
 ```
 
-## MacOS 安装 MySQL
+### MacOS 安装 MySQL
 
 `# brew install mysql`
